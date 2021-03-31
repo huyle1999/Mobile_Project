@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/SignUp"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".Signup"
+    tools:deviceIds="wear">
+
+    <TextView
+        android:layout_width="129dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="102dp"
+        android:text="Sign up"
+        android:textColor="@color/white"
+        android:textSize="36.41dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="324dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/custum_textbook"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Arlene McCoy"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="324dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="321dp"
+        android:background="@drawable/custum_textbook"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="arlenemccoy@gmail.com"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="35dp"
+        android:text="Full Name"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textUser"
+        android:layout_width="56dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="35dp"
+        android:text="E-mail"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUsername"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textpassword"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="35dp"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="324dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/custum_textbook"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="248dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_loginbtn"
+        android:src="@drawable/signbtn"
+        android:text="Button"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="88dp"
+        android:layout_height="17dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:text="Or sign up with"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="147dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/custom_btn"
+        android:src="@drawable/facebook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="155dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/custom_btn"
+        android:src="@drawable/google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/eye"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword"
+        tools:layout_editor_absoluteX="327dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="91dp"
+        android:layout_height="7dp"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/hidepassword"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword"
+        tools:layout_editor_absoluteX="48dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
