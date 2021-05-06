@@ -3,6 +3,7 @@ package com.thesis.android_challenge_w3.activity.recycleview
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.thesis.android_challenge_w3.R
@@ -26,7 +27,7 @@ class RestaurantAdapter : RecyclerView.Adapter<RestaurantAdapter.ViewHolder>() {
         val item = data[position]
         holder.tvName.text = item.Name
         holder.tvAddress.text = item.Address
-        holder.tvPicturePath.text = item.PicturePath
+        holder.tvPicturePath.setImageResource(item.PicturePath)
     }
 
     override fun getItemCount(): Int {
@@ -36,6 +37,6 @@ class RestaurantAdapter : RecyclerView.Adapter<RestaurantAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val tvName = itemView.findViewById<TextView>(R.id.tvName)
         val tvAddress = itemView.findViewById<TextView>(R.id.tvAddress)
-        val tvPicturePath = itemView.findViewById<TextView>(R.id.tvPicturePath)
+        val tvPicturePath = itemView.findViewById<ImageView>(R.id.tvPicturePath)
     }
 }
