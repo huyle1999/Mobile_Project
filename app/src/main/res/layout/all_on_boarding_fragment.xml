@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<androidx.fragment.app.FragmentContainerView
+    android:id="@+id/on_boarding_frag"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+
+</androidx.fragment.app.FragmentContainerView>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/danh1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Browse your menu"
+        android:textColor="#131A38"
+        android:textSize="36sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/danh2"
+        android:layout_below="@+id/danh1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Our app can send you everywhere, even"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/danh3"
+        android:layout_below="@+id/danh2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="space. For only $2.99 per month"
+        android:textSize="17sp" />
+
+    <ImageButton
+        android:layout_centerHorizontal="true"
+        android:id="@+id/movewel"
+        android:layout_below="@+id/danh3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scrollbarSize="100dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/node_arrow"
+        android:layout_marginBottom="50dp"/>
+
+</RelativeLayout>
+
+
+</LinearLayout>
