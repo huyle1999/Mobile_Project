@@ -8,7 +8,10 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.thesis.android_challenge_w3.Movie.MovieActivity
 import com.thesis.android_challenge_w3.UserAccount
+import com.thesis.android_challenge_w3.activity.signin.SignInViewModel
+import com.thesis.android_challenge_w3.activity.splash.SplashActivity
 import com.thesis.android_challenge_w3.databinding.LogInFragmentBinding
 import com.thesis.android_challenge_w3.recycleview.RestaurantsActivity
 import kotlinx.android.synthetic.main.log_in_fragment.*
@@ -37,17 +40,18 @@ class LoginFragment : Fragment() {
         val loginAccount : UserAccount = args?.getSerializable("SignedUpAccount") as UserAccount
         binding.apply {
             LoginButton.setOnClickListener{
-                if(LoginEmailEntered.text.toString() != loginAccount.email)
+                if(LoginEmailEntered.text.toString() != loginAccount.email) {
                     Toast.makeText(
                         activity,
                         "This email is not existed!",
                         Toast.LENGTH_SHORT
                     ).show()
+                }
                 else if(LoginPasswordEntered.text.toString() != loginAccount.password)
                     Toast.makeText(activity, "Wrong password", Toast.LENGTH_SHORT).show()
                 else
                 {
-                    val intent = Intent(activity, RestaurantsActivity::class.java)
+                    val intent = Intent(activity, SplashActivity::class.java)
                     //intent.putExtra("account",loginAccount)
 
                     startActivity(intent)

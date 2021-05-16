@@ -18,13 +18,14 @@ class MainActivity : AppCompatActivity() {
         const val USER_KEY = "USER_KEY"
     }
 
-    private lateinit var binding: ActivitySignInBinding
-    private lateinit var viewModel: SignInViewModel
+//    private lateinit var binding: ActivitySignInBinding
+//    private lateinit var viewModel: SignInViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        supportFragmentManager.commit { setReorderingAllowed(true)
+        supportFragmentManager.commit {
+            setReorderingAllowed(true)
             add<OnBoardingOneFragment>(R.id.frag_container_view)}
 
     }

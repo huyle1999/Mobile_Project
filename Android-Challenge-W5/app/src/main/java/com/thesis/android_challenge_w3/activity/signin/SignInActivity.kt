@@ -9,6 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.thesis.android_challenge_w3.Movie.MovieActivity
+import com.thesis.android_challenge_w3.Movie.MovieDetailActivity
+import com.thesis.android_challenge_w3.Movie.RestClient
 import com.thesis.android_challenge_w3.R
 import com.thesis.android_challenge_w3.activity.profile.ProfileActivity
 import com.thesis.android_challenge_w3.activity.recycleview.RecycleViewList
@@ -58,9 +61,9 @@ class SignInActivity : AppCompatActivity() {
             user?.let {
                 showToastMessage("Sign in Successful")
 //                startProfileActivity(user)
-                val intent = Intent(this@SignInActivity, RecycleViewList::class.java)
+                val intent = Intent(this@SignInActivity, MovieActivity::class.java)
                 startActivity(intent)
-                finish()
+                //finish()
             }
 
         })

@@ -13,7 +13,6 @@ import androidx.fragment.app.commit
 import androidx.lifecycle.ViewModelProvider
 import com.thesis.android_challenge_w3.Login.LoginFragment
 import com.thesis.android_challenge_w3.R
-import com.thesis.android_challenge_w3.activity.signup.SignUpViewModel
 import com.thesis.android_challenge_w3.databinding.SignUpFragmentBinding
 
 
@@ -134,7 +133,7 @@ class SignUpFragment : Fragment() {
                     addToBackStack(null)
                 }
             }
-            //binding.account = viewModel.account
+            binding.account = viewModel.account
         }
 
 
